@@ -1,0 +1,61 @@
+<div class=page-title>
+  <div id=particles-js-pagetitle></div>
+  <div class=container>
+    <h1>Contact</h1>
+    <h6>Everest Marketing</h6>
+  </div>
+</div>
+<div class=section-block>
+  <div class=container>
+    <div class="row contact-box">
+      <div class="col-xs-12 col-sm-4 col-md-4">
+        <div class=contact-box-info>
+          <div class="clearfix contact-box-icon">
+            <div class=contact-icon><i class="fa fa fa-phone"></i></div>
+            <div class=contact-info>
+              <h5>Phone</h5>
+              <ul style="padding:0px">
+                <li><a href="tel:+923034222111">+92-303-4222111</a></li>
+                <li> <a href="tel:+923334363518">+92-333-4363518</a></li>
+                <li><a href="tel:+924237199440">+92-423-7199440</a></li>
+              </ul>
+
+
+
+            </div>
+          </div>
+          <div class="clearfix contact-box-icon">
+            <div class=contact-icon><i class="fa fa-map-marker"></i></div>
+            <div class=contact-info>
+              <h5>Our Address</h5>
+              <a>Everst Real Estate Marketing INC</a>
+              <a>166 C Block Phase 8 DHA Lahore</a>
+            </div>
+          </div>
+          <div class="clearfix contact-box-icon">
+            <div class=contact-icon><i class="fa fa-envelope-o"></i></div>
+            <div class=contact-info>
+              <h5>Email</h5>
+              <a href="mailto:EverestMarketing@gmail">EverestMarketing@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-8 col-sm-8">
+        <div class="container row contact-box-message">
+          <form [formGroup]="contactForm" autocomplete=off class=contact-form style="width: 100%;" (ngSubmit) = "onSubmit()">
+            <div class=col-xs-12><input formControlName="name" placeholder="Your Name" name=name></div>
+            <div class=col-xs-6><input formControlName="userEmail" placeholder="E-mail adress" name=email type=email>
+            </div>
+            <!-- <div class=col-xs-6><input formControlName="subject" placeholder=Subject name=subject></div> -->
+            <div class=col-xs-12><textarea formControlName="message" name=message placeholder="Your Message"></textarea>
+            </div>
+            <div class=col-xs-12><button class="center-holder button-md full-width mt-20 primary-button rounded-border"
+                type=submit>Send
+                Message</button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

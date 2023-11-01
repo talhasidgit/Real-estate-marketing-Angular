@@ -1,0 +1,18 @@
+<div class="container section-block">
+  <div>
+    <div class="col-xs-12 col-md-3 col-sm-3">
+      <div class=section-heading>
+        <h2 class="animated fadeInLeft wow">Our Clients</h2>
+        <h3>Great Clients</h3>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-12 col-sm-12">
+      <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+      (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <img src="{{ slide.img }}" alt="" width="100%">
+      </div>
+    </ngx-slick-carousel>
+    </div>
+  </div>
+</div>

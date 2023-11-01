@@ -1,0 +1,130 @@
+<ngb-carousel *ngIf="images" [showNavigationArrows]="true" [showNavigationIndicators]="true">
+  <ng-template ngbSlide *ngFor="let image of images">
+    <div class="wrapper">
+      <img [src]="image" alt="Random slide" width="100%">
+    </div>
+    <!-- <div class="carousel-caption">
+      <h3>Everest Real Estate Marketing INC</h3>
+      <p>We conduct ourselves in the highest ethical standards, demonstrating honesty and fairness in every decision and
+        action.</p>
+    </div> -->
+  </ng-template>
+</ngb-carousel>
+<div class=section-block-bg style="background-image:url(assets/img/bg/bg1.jpg)">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 col-sm-7">
+        <div class="section-heading">
+          <h2 class="animated fadeInLeft wow">About Us</h2>
+          <h3>Welcome ! We are Everest Marketing <br>From Pakistan</h3>
+        </div>
+        <div class="text-content">
+          <p align="justify">We are dedicated to providing world-class service and market-leading expertise to our
+            clients. We are
+            passionate about providing the extra value that others simply will not. Fanatical integrity and consistently
+            impressive results will be the signature of our service. Our collaborative spirit and desire to grow will
+            help us achieve the goals we set. We will make the families we serve feel special, creating raving fans, and
+            help them truly win. We will succeed because we will not let our clients fail.</p>
+        </div>
+        <div class="text-content">
+          <p align="justify">In addition to our core values, our mission statement more clearly defines our true purpose
+            as an
+            organization and further enhances our team culture. We are unified in consistently living out our core
+            values and performing our professions in direct alignment with our mission statement.</p>
+        </div>
+        <!-- <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="clearfix top-article">
+              <div class="top-article-icon"><i class="icon-my-house"></i></div>
+              <div class="top-article-content">
+                <h5>Your Everest Marketing</h5>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6">
+            <div class="clearfix top-article">
+              <div class="top-article-icon"><i class=icon-pen-and-set-square></i></div>
+              <div class="top-article-content">
+                <h5>Creative Art Plans</h5>
+                <p>Lorem ipsum dolor sit.</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="mt-30 mb-15">
+          <a href="#" class="button-md dark-button" [routerLink]="'/about'">Read More</a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-offset-1 col-sm-5 col-md-5">
+        <div class="outline-bordered-right"><img alt="img" src="assets/img/B 8.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class=section-block>
+  <div id=particles-js style=height:1000px></div>
+  <div class=container>
+    <div class="row project-row" data-scrollax-parent=true>
+      <div class="col-xs-12 col-sm-7 col-md-7" data-scrollax="properties: { 'translateY': '-50px', 'opacity': 0.1 }">
+        <div class=outline-bordered-left><img style="width: 100%;" src="assets/img/lahore.jpeg"></div>
+      </div>
+      <div class="col-xs-12 col-md-4 col-md-offset-1 col-sm-5"
+        data-scrollax="properties: { 'translateY': '100px', 'opacity': 0 }">
+        <div class=project-title>
+          <!-- <h3>01</h3> -->
+          <h2><a routerLink="/lahore-smart-city" href="javascript:void(0)"
+              style="text-decoration: none; color: #2d2d2d;">Lahore Smart City</a></h2>
+
+        </div>
+        <div class="mt-30 text-content">
+          <p align="justify">Lahore Smart city will the first smart city in Lahore and the 2nd in Pakistan. After the
+            Enormous Success
+            of Capital smart-city at Islamabad, Future Development Holding limited initiated to start yet another
+            exciting chapter of a smart city in the city of gardens called “Lahore”.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row project-row mt-100" data-scrollax-parent=true>
+      <div class="col-xs-12 col-sm-6 col-md-6" data-scrollax="properties: { 'translateY': '100px', 'opacity': 0.2 }">
+        <div class=project-title>
+          <!-- <h3>02</h3> -->
+          <h2><a routerLink="/capital-smart-city" href="javascript:void(0)"
+              style="text-decoration: none; color: #2d2d2d;">Capital Smart City</a></h2>
+        </div>
+        <div class="mt-30 text-content">
+          <p align="justify">Capital Smart City is the First “Smart City “of Pakistan and the 4th in Asia. It is a grand
+            housing venture
+            that is providing state of the art infrastructure, unmatched facilities, and prime location. It is one of
+            the most famous housing developments in the country.</p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6" data-scrollax="properties: { 'translateY': '-50px', 'opacity': 0 }">
+        <div class=outline-bordered-right> <img style="width: 100%;" src="assets/overseas/1.jpg">
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row project-row mt-100" data-scrollax-parent=true>
+      <div class="col-xs-12 col-sm-7 col-md-7" data-scrollax="properties: { 'translateY': '-50px', 'opacity': 0 }">
+        <div class=outline-bordered-left><img alt=img src="assets/img/content/home-pr-4.jpg"></div>
+      </div>
+      <div class="col-xs-12 col-md-4 col-md-offset-1 col-sm-5"
+        data-scrollax="properties: { 'translateY': '100px', 'opacity': 0.2 }">
+        <div class=project-title>
+          <h3>03</h3>
+          <h2>Milwaukee Summer House</h2>
+        </div>
+        <div class="mt-30 text-content">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia magna vel molestie
+            faucibus. Donec auctor et urnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+            lacinia magna vel molestie faucibus.
+        </div>
+      </div>
+    </div> -->
+  </div>
+</div>
+<!-- <app-news></app-news> -->
+<!-- <app-profile></app-profile> -->
+<!-- <app-pricing></app-pricing> -->
+<!-- <app-clients></app-clients> -->

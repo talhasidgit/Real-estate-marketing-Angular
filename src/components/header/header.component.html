@@ -1,0 +1,84 @@
+<div class="container-fluid">
+  <div class="row">
+    <nav class="navbar navbar-custom navbar-expand-md navbar-light bg-light" style="width: 100%;">
+      <a [routerLink]="'/'" [routerLinkActive]="'active'" class="navbar-logo"><img alt="logo"
+          src="assets/img/log.png"></a>
+      <button (click)="toggle = !toggle" class="navbar-toggler" style="margin-right: 10px;" type="button"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div *ngIf="!isMobile" class="navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'/home'" [routerLinkActive]="'active'">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="'/about'" [routerLinkActive]="'active'">About Us </a>
+          </li>
+          <li class="nav-item dropdown" [style.cursor]="'pointer'">
+            <div ngbDropdown class="nav-dropdown d-inline-block">
+              <a class="nav-link dropdown-toggle" id="dropdownMenuButton" ngbDropdownToggle data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Services</a>
+              <div ngbDropdownMenu aria-labelledby="dropdownMenuButton" class="dropdown-menu">
+          <li><a class="dropdown-item" [routerLink]="'/services'" ngbDropdownItem>Our Services</a></li>
+      </div>
+  </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="'/team'" [routerLinkActive]="'active'">Our Team</a>
+  </li>
+  <li class="nav-item dropdown" [style.cursor]="'pointer'">
+    <div ngbDropdown class="nav-dropdown d-inline-block">
+      <a class="nav-link dropdown-toggle" id="dropdownMenuButton" ngbDropdownToggle data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">Projects</a>
+      <div ngbDropdownMenu aria-labelledby="dropdownMenuButton" class="dropdown-menu">
+  <li><a class="dropdown-item" [routerLink]="'/lahore-smart-city'" ngbDropdownItem>Lahore Smart City</a></li>
+  <li><a class="dropdown-item" [routerLink]="'/capital-smart-city'" ngbDropdownItem>Capital Smart City</a></li>
+</div>
+</div>
+</li>
+<li class="nav-item">
+  <a class="nav-link" [routerLink]="'/contact'" [routerLinkActive]="'active'">Contact Us </a>
+</li>
+</ul>
+</div>
+<div *ngIf="isMobile && toggle" class="navbar-collapse">
+  <ul class="navbar-nav ml-auto">
+    <li (click)="toggle=false" class="nav-item">
+      <a class="nav-link" [routerLink]="'/'" [routerLinkActive]="'active'">Home</a>
+    </li>
+    <li (click)="toggle=false" class="nav-item">
+      <a class="nav-link" [routerLink]="'/about'" [routerLinkActive]="'active'">About Us </a>
+    </li>
+    <li class="nav-item dropdown" [style.cursor]="'pointer'">
+      <div ngbDropdown class="nav-dropdown d-inline-block">
+        <a class="nav-link dropdown-toggle" id="dropdownMenuButton" ngbDropdownToggle data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">Services</a>
+        <div ngbDropdownMenu aria-labelledby="dropdownMenuButton" class="dropdown-menu">
+    <li (click)="toggle=false"><a class="dropdown-item" [routerLink]="'/services'" ngbDropdownItem>Our Services</a></li>
+</div>
+</div>
+</li>
+<li (click)="toggle=false" class="nav-item">
+  <a class="nav-link" [routerLink]="'/team'" [routerLinkActive]="'active'">Our Team</a>
+</li>
+<li class="nav-item dropdown" [style.cursor]="'pointer'">
+  <div ngbDropdown class="nav-dropdown d-inline-block">
+    <a class="nav-link dropdown-toggle" id="dropdownMenuButton" ngbDropdownToggle data-toggle="dropdown"
+      aria-haspopup="true" aria-expanded="false">Projects</a>
+    <div ngbDropdownMenu aria-labelledby="dropdownMenuButton" class="dropdown-menu">
+<li (click)="toggle=false"><a class="dropdown-item" [routerLink]="'/lahore-smart-city'" ngbDropdownItem>Lahore Smart
+    City</a></li>
+<li (click)="toggle=false"><a class="dropdown-item" [routerLink]="'/capital-smart-city'" ngbDropdownItem>Capital Smart
+    City</a></li>
+</div>
+</div>
+</li>
+<li (click)="toggle=false" class="nav-item">
+  <a class="nav-link" [routerLink]="'/contact'" [routerLinkActive]="'active'">Contact Us </a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
